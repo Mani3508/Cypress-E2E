@@ -9,9 +9,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      
-      # Install npm dependencies, cache them correctly and run all Cypress tests
-      - name: Cypress run
-        uses: cypress-io/github-action@v5
-        with:
-         command: npm run test:registertest
+
+      - name: Install Dependencies
+        run: npm install  # Ensures all dependencies are installed
+
+      # Run only the specified test suite
+      - name: Run Cypress Register Test
+        run: npm run test:registertest  # ✅ This ensures only the specified test runs
