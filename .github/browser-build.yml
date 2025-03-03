@@ -17,5 +17,6 @@ jobs:
       - name: Run Cypress Register Test
         uses: cypress-io/github-action@v5
         with:
-          browser: firefox
-          spec: "cypress/e2e/tests/registerTest.cy.js"
+           with:
+             name: Mochawesome HTML Report - Add To Cart
+             path: cypress/reports/html
