@@ -13,9 +13,9 @@ jobs:
       - name: Install Dependencies
         run: npm install  # Ensures all dependencies are installed
 
-      # Run only the specified test suite
+      # Run Cypress using GitHub Action
       - name: Run Cypress Register Test
-        run: npx cypress run --spec "cypress/e2e/tests/registerTest.cy.js"
+        uses: cypress-io/github-action@v5
         with:
-         browser: firefox
-
+          browser: firefox
+          spec: "cypress/e2e/tests/registerTest.cy.js"
