@@ -1,22 +1,21 @@
 const { defineConfig } = require("cypress");
 
-reportDir: "cypress/reports/mochawesome",
-
 module.exports = defineConfig({
   e2e: {
-    //setupNodeEvents(on, config) {
-      // implement node event listeners here
-      reporter: "mochawesome",
+    setupNodeEvents(on, config) {
+      // Implement node event listeners here
+      return config;  // ✅ Ensure config is returned
+    },
+    reporter: "mochawesome",
     reporterOptions: {
       reportDir: "cypress/reports/mochawesome",
       overwrite: false,
       html: true,
       json: true,
-      charts: true
+      charts: true,
     },
-  },
-
-  env:{
-    URL:'https://naveenautomationlabs.com/opencart/index.php?route=account/register'
+    env: {
+      URL: 'https://naveenautomationlabs.com/opencart/index.php?route=account/register'
+    }
   }
 });
