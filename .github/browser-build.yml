@@ -15,4 +15,5 @@ jobs:
 
       # Run only the specified test suite
       - name: Run Cypress Register Test
-        run: npm run test:registertest  # ✅ This ensures only the specified test runs
+        run: npx cypress run --spec "cypress/e2e/tests/registerTest.cy.js"
+
