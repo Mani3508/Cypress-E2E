@@ -16,4 +16,6 @@ jobs:
       # Run only the specified test suite
       - name: Run Cypress Register Test
         run: npx cypress run --spec "cypress/e2e/tests/registerTest.cy.js"
+        with:
+         browser: firefox
 
