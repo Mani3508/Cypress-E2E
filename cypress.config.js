@@ -16,6 +16,12 @@ module.exports = defineConfig({
     },
     env: {
       URL: 'https://naveenautomationlabs.com/opencart/index.php?route=account/register'
+    },
+  
+      retries: {
+        runMode: 2, // Retries when running tests in CLI (cypress run)
+        openMode: 1  // Retries when running tests in Cypress GUI (cypress open)
+      }
     }
-  }
-});
+  });
+  

@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-03-03T13:20:22.822Z",
+    "end": "2025-03-03T13:20:31.788Z",
+    "duration": 8966,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a48ed8d0-db7b-453f-9037-bc1257580e4b",
+      "title": "",
+      "fullFile": "cypress/e2e/tests/registerTest.cy.js",
+      "file": "cypress/e2e/tests/registerTest.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "71223f48-89f0-4f84-9564-be97452c1514",
+          "title": " test automation",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "register flow",
+              "fullTitle": " test automation register flow",
+              "timedOut": null,
+              "duration": 4145,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://naveenautomationlabs.com/opencart/index.php?route=account/register');\ncy.get('#input-firstname').type('Mani');\ncy.get('#input-lastname').type('Babu');\ncy.get('#input-email').type('Babu@gmail.com');\ncy.get('#input-telephone').type('12334567890');\ncy.get('#input-password').type('Manibabu1@');\ncy.get('#input-confirm').type('Manibabu1@');\ncy.get('input[type=\"checkbox').click();\ncy.get('.btn.btn-primary').click;\n// registerObj.openURL()\n// registerObj.enterFirstName(registerData.firstName)\n// registerObj.enterlastName(registerData.lastName)\n// registerObj.enterEmail(registerData.email)\n// registerObj.enterTelephone(registerData.telephone)\n// registerObj.enterPassword(registerData.password)\n// registerObj.selectCheckbox()\n// registerObj.clickOnContinue()",
+              "err": {},
+              "uuid": "9594cf41-fbe5-4048-8697-451049e5dd32",
+              "parentUUID": "71223f48-89f0-4f84-9564-be97452c1514",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "register flow",
+              "fullTitle": " test automation register flow",
+              "timedOut": null,
+              "duration": 1954,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://naveenautomationlabs.com/opencart/index.php?route=account/register');\ncy.get('#input-firstname').type('Mani');\ncy.get('#input-lastname').type('Babu');\ncy.get('#input-email').type('Babu@gmail.com');\ncy.get('#input-telephone').type('12334567890');\ncy.get('#input-password').type('Manibabu1@');\ncy.get('#input-confirm').type('Manibabu1@');\ncy.get('input[type=\"checkbox').click();\ncy.get('.btn.btn-primary').click;",
+              "err": {},
+              "uuid": "60a9bff2-b6df-4cb8-a9e8-05704972c8e3",
+              "parentUUID": "71223f48-89f0-4f84-9564-be97452c1514",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9594cf41-fbe5-4048-8697-451049e5dd32",
+            "60a9bff2-b6df-4cb8-a9e8-05704972c8e3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6099,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mochawesome",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
